@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          script: |
+          script: 
             cd /home/ubuntu/quiz-docker/
             sudo chmod -R 777 storage
             sudo chmod -R 777 bootstrap
@@ -44,3 +44,4 @@ jobs:
             sudo docker exec sisku php artisan migrate
             sudo docker exec sisku php artisan db:seed
             sudo docker exec sisku php artisan optimize:clear
+            sudo docker exec sisku php artisan key:generate
