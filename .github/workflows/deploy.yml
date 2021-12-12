@@ -17,7 +17,7 @@ jobs:
          
           port: ${{ secrets.PORT }}
           script: 
-            cd /home/ubuntu/docker-laravel-kuis2/
+            cd /home/ubuntu/quiz-docker/
             sudo chmod -R 777 storage
             sudo chmod -R 777 bootstrap
             sudo chmod -R 777 public
