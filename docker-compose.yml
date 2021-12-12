@@ -5,7 +5,7 @@ services:
   showroom:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: DockerFile
     image: nailyy/sisku
     container_name: sisku
     restart: unless-stopped
