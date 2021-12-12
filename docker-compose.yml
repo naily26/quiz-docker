@@ -17,11 +17,11 @@ services:
     volumes:
       - ./:/var/www/html
     networks:
-      - laravel-showroom
+      - laravel-sisku
   #Nginx Service
   nginx-showroom:
     image: nginx:alpine
-    container_name: nginx-showroom
+    container_name: nginx-sisku
     restart: unless-stopped
     tty: true
     ports:
@@ -30,9 +30,9 @@ services:
       - ./:/var/www/html
       - ./nginx/conf.d/:/etc/nginx/conf.d/
     networks:
-      - laravel-showroom
+      - laravel-sisku
 
 #Docker Networks
 networks:
-  laravel-showroom:
+  laravel-sisku:
     driver: bridge
