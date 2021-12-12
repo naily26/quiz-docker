@@ -24,7 +24,7 @@ jobs:
             sudo echo 'APP_NAME=${{secrets.APP_NAME}}' >> .env
             sudo echo 'APP_URL=${{secrets.HOST}}' >> .env
             sudo echo 'APP_ENV=local' >> .env
-            
+            sudo echo 'APP_KEY=${{secrets.APP_KEY}}' >> .env
             sudo echo 'APP_DEBUG=true' >> .env
             sudo echo 'LOG_CHANNEL=stack' >> .env
             sudo echo 'LOG_LEVEL=debug' >> .env
